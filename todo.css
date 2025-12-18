@@ -1,0 +1,124 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+main {
+  width: 100%;
+  height: 100%;
+  background-color: rgb(9, 16, 16);
+}
+
+.alltask {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.close-btn {
+  background-color: red;
+  padding: 15px 25px;
+  position: absolute;
+  right: 5%;
+  top: 3%;
+  border: none;
+  color: white;
+  cursor: pointer;
+  border-radius: 6px;
+  font-size: 15px;
+}
+
+.alltask h4 {
+  font-size: 30px;
+  padding: 30px;
+  color: white;
+}
+
+
+.task-wrapper {
+  display: flex;
+  width: 100%;
+  height: calc(100% - 100px);
+}
+
+
+.addtask {
+  width: 33.33%;
+  background-color: rgb(69, 15, 81);
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.addtask input,
+.addtask textarea {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+}
+
+.addtask textarea {
+  height: 150px;
+  resize: none;
+}
+
+.addtask button {
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  background-color: rgb(12, 19, 19);
+}
+.addtask button:hover{
+  background-color: rgb(9, 36, 87);
+}
+
+
+.showhtask {
+  width: 66.66%;
+  background-color: rgb(24, 53, 53);
+  padding: 30px;
+  color: white;
+    overflow-y: auto;     
+  scrollbar-width: none;
+}
+
+.showhtask::-webkit-scrollbar {
+  display: none;
+}
+
+
+
+.showhtask .box{
+  width: 100%;
+  height: 60px;
+  background-color: orangered;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 20px 00px;
+ 
+}
+
+.showhtask .box .showinput{
+  padding: 20px;
+  font-size: 20px;
+}
+
+.showhtask .box .markclose{
+    cursor: pointer;
+  padding: 10px 20px;
+  background-color: rgb(12, 19, 19);
+  border:none ;
+  border-radius: 10px;
+  margin-right: 10px;
+}
